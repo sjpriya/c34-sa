@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var box1, ground;
-var ball, rope
+var ball, rope;
 
 function setup() {
   createCanvas(3000, 800);
@@ -15,9 +15,10 @@ function setup() {
   ground = new Ground(600, 600, 1200, 20);
 
   box1 = new Box(900, 100, 70, 70);
+  // create box objects 
   
   ball = new Ball(200, 200, 80, 80);
-  
+  //create rope object 
 
 }
 
@@ -26,11 +27,11 @@ function draw() {
   Engine.update(engine);
   ground.display();
   box1.display();
-  
+  // display boxes
   
 
   ball.display();
-  
+  // display rope
 
 
 }
